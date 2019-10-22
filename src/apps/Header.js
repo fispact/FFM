@@ -16,8 +16,8 @@ function Header(props) {
         
         <Menu>
           {/* <Link id="input file" className="menu-item" to="/input">Input File</Link> */}
-          <Link id="files file" className="menu-item" to="/files">Files File</Link>
-          <Link id="fluxes file" className="menu-item" to="/fluxes">Fluxes File</Link>
+          <Link id="files file" className="menu-item" to="/ffm/files">Files File</Link>
+          <Link id="fluxes file" className="menu-item" to="/ffm/fluxes">Fluxes File</Link>
           <div className="bm-item-entry">
             <div className="bm-item-subentry">
               Cross section data: <DropdownInput 

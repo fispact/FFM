@@ -128,10 +128,10 @@ class Main extends Component {
         <div>
             <BrowserRouter forceRefresh={false}>
             <div>
-                <Route exact path='/' render={() => this.createFilesApp()} />
+                <Route exact path='/ffm' render={() => this.createFilesApp()} />
                 {/* <Route path='/input' render={() => this.createInputApp()} /> */}
-                <Route path='/files' render={() => this.createFilesApp()} />
-                <Route path='/fluxes' render={() => this.createFluxesApp()} />
+                <Route exact path='/ffm/files' render={() => this.createFilesApp()} />
+                <Route exact path='/ffm/fluxes' render={() => this.createFluxesApp()} />
             </div>
             </BrowserRouter>
         </div>
@@ -139,7 +139,7 @@ class Main extends Component {
     }
 }
 
-ReactDOM.render(<Main />, document.getElementById('root'));
+ReactDOM.render(<Main />, document.getElementById('ffm-root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

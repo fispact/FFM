@@ -1,5 +1,6 @@
 {
-  "name": "fispy",
+  "name": "FFM",
+  "homepage" : "https://fispact.ukaea.uk/ffm",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,0 +1,45 @@
+
+.Input-fileviewer {
+	font-family: 'Montserrat', sans-serif;
+    background-color: #f1f8f8;
+    border-radius: 8px;
+    border: 10px solid #b94d4d;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: left;
+    justify-content: left;
+    font-size: calc(8px + 2vmin);
+    color: #424141;
+    display: inline-block;
+    min-width: 80%;
+    position: relative;
+    min-height: 60vh;
+  }
+
+
+.Input-optional-button {
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  color: #111;
+  background-color: rgb(247, 247, 239);
+  border: none;
+  border-radius: 400px;
+  cursor: pointer;
+  outline: none;
+  margin-left: 20px;
+}
+
+.Input-optional-button:hover {
+  background-color: rgb(241, 61, 15);
+  width: 30px;
+  height: 30px;
+}
+
+.Input-tooltip {
+  width: 300px;
+}

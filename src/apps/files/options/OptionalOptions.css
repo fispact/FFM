@@ -1,0 +1,119 @@
+
+input[type='checkbox'].Files-toggle {
+    display: none;
+}
+
+.Files-optional-input{
+    width: 240px;
+    font-size: 18px;
+    padding-left: 2%;
+    transition: border-color 0.2s;
+    padding: 0.5em 0em 0.5em 0.5em;
+    color: #dfdbdb;
+}
+
+input[type='text'].Files-optional-input {
+    color: #dfdbdb;
+    background-color: #282c34;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding:10px 10px 10px 5px;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid #dfdbdb;
+}
+
+/* active state */
+input[type=text].Files-optional-input:focus{
+  color: #eed0d0;
+  border-bottom: 2px solid #5264AE;
+}
+  
+.Files-lbl {
+    display: inline-block; 
+    width: 230px;
+    text-align: right;
+}
+  
+.Files-lbl-toggle {
+    display: block;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all 0.25s ease-out;
+}
+  
+.Files-lbl-toggle:hover {
+    color: rgb(82, 74, 192);
+}
+  
+.Files-lbl-toggle::before {
+    content: ' ';
+    display: inline-block;
+  
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+  
+    transition: transform .2s ease-out;
+}
+  
+.Files-toggle:checked + .Files-lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+}
+  
+.Files-collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.Files-toggle:checked + .Files-lbl-toggle + .Files-collapsible-content {
+  max-height: 1050px;
+}
+
+.Files-toggle:checked + .Files-lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.Files-collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+  }
+
+.Files-collapsible-content .Files-content-inner {
+  color: #dfdbdb;
+  border-radius: 7px;
+  margin-right: 40px;
+  margin-left: 50px;
+  padding: .5rem 1rem;
+  font-size: 20px;
+}
+
+.Files-optional-button {
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  color: #111;
+  background-color: rgb(247, 247, 239);
+  border: none;
+  border-radius: 400px;
+  cursor: pointer;
+  outline: none;
+  margin-left: 20px;
+}
+
+.Files-optional-button:hover {
+  background-color: rgb(241, 61, 15);
+  width: 30px;
+  height: 30px;
+}
+
+.Files-tooltip {
+  width: 300px;
+}

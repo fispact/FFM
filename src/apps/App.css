@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo|Montserrat');
+@import '~pretty-checkbox/dist/pretty-checkbox.min.css';
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100%;
+  overflow: scroll;
+	font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 22px "Montserrat", Futura, sans-serif;
+  left: 0px;
+  position: relative;
+	background-color: #ffffff;
+}
+
+h2{
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+
+h3{
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-title{
+  text-align: center;
+  color: black;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.App-wrapper {
+  background-color: #282c34;
+  min-height: 100vh;
+  top: 30;
+  padding-top: 20px;
+  align-items: left;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-left {
+  left: 0;
+  text-align: left;
+  background-color: #282c34;
+  min-height: 2000px;
+  width: 50%;
+  float: left;
+  z-index: 1;
+  top: 30;
+  padding-top: 20px;
+  align-items: left;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-right {
+  text-align: left;
+  font-size: 22px "Montserrat", Futura, sans-serif;
+  right: 0;
+  background-color: #324158;
+  min-height: 2000px;
+  width: 50%;
+  float: right;
+  z-index: 1;
+  top: 30;
+  padding-top: 20px;
+  align-items: left;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-content {
+  margin-left:20px;
+}
+
+.App-mass {
+  margin-left:1px;
+  margin-right:10px;
+  margin-bottom: 10px;
+  border: 2px solid #e8eaec;
+  /* border-radius: 45px; */
+  text-align: center;
+  width: 99%;
+  float: left;
+}
+
+/* .App-mass h4 {
+  margin-left:40px;
+} */
+
+.App-mass p {
+  /* margin-left:40px; */
+  font-size: 16px;
+}
+
+.App-fuel {
+  margin-left:20px;
+  margin-right:20px;
+  border: 2px solid #e8eaec;
+  border-radius: 45px;
+  text-align: left;
+  width: 40%;
+  float: right;
+}
+
+.App-fuel h4 {
+  margin-left:40px;
+}
+
+.App-button {
+  width: 180px;
+  height: 45px;
+  font-size: 16px;
+  letter-spacing: 2.5px;
+  color: #111;
+  background-color: #ffe;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 40px;
+  margin-right: 40px;
+  margin-left: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.App-button:hover {
+  background-color: rgb(65, 151, 117);
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.App-fileviewer {
+  background-color: #feffff;
+  border-radius: 8px;
+  border: 2px solid #282c34;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: left;
+  justify-content: left;
+  font-size: calc(8px + 2vmin);
+  color: #424141;
+  display: inline-block;
+  min-width: 80%;
+  position: relative;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+textarea {
+  outline: none;
+  resize: none;
+}
+
+.centered {
+  margin: auto;
+  width: 50%;
+}
+
+.centeredtext{
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.select {
+  font-size: 16px;
+  position: relative;
+  display: inline-block;
+  padding-left: 2%;
+}
+
+.select select {
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  padding: 0.5em 0em 0.5em 0.5em;
+  margin: 0;
+
+  width: 160px;
+  transition: border-color 0.2s;
+  border: 0px solid black;
+  border-radius: 8px;
+
+  background: rgb(239, 245, 233);
+  color: #3d3d3d;
+  line-height: normal;
+  font: 18px "Montserrat", Futura, sans-serif;
+  line-height: inherit;
+
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 12px) calc(1em + 2px),
+    calc(100% - 8px) calc(1em + 2px),
+    calc(100% - 1.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+.App-name-input{
+  width: 240px;
+  font-size: 18px;
+  padding-left: 2%;
+  transition: border-color 0.2s;
+  border: 0px solid black;
+  border-radius: 8px;
+  padding: 0.5em 0em 0.5em 0.5em;
+  margin: 0;
+}
+
+.App-checkbox{
+  transition: border-color 0.2s;
+  border: 3px solid green;
+  border-radius: 8px;
+  padding: 0.5em 0em 0.5em 0.5em;
+  margin: 0;
+  zoom: 1.8;
+  left: 0px;
+  position: relative;
+}
+
+input[type=text] {
+  background-color: #282c34;
+	font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  color: #f1ecec;
+  padding:10px 10px 10px 5px;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 6px solid #f1ecec;
+} 
+
+input[type=text]:focus { 
+  outline:none; 
+}
+
+/* active state */
+input[type=text]:focus{
+  color: #eed0d0;
+  border-bottom: 6px solid #5264AE;
+}
+
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+  color: #fffeef;
+  font-style: normal;
+} 
+
+input[type='checkbox'].toggle {
+  display: none;
+}
+
+.wrap-collabsible {
+  margin-bottom: 1.2rem 0;
+}
+
+.lbl-toggle {
+  display: block;
+  padding: 1rem;
+  cursor: pointer;
+
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+  color: rgb(26, 126, 22);
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.hidden { 
+  display: none; 
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 350px;
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+  background: rgba(177, 176, 172, 0.2);
+  border-radius: 7px;
+  margin-right: 40px;
+  padding: .5rem 1rem;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  left: 30px;
+  top: 20px;
+}
+
+.right .bm-burger-button {
+  left: initial;
+  right: 30px;
+}
+
+.bm-burger-bars {
+  background: #373a47;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+.bm-menu {
+  background: #373a47;
+}
+
+.bm-item-list a {
+  padding: 2.0em 1.5em 0;
+  font-size: 1.55em;
+  font-weight: 800;
+  color: #fffce1;
+  text-decoration: none;
+}
+
+.bm-item-list a:hover, a:active
+{
+  color: #c94e50;
+}
+
+.bm-item:focus {
+  outline: none;
+}
+
+
+.bm-item-entry {
+  margin-top: 25%;
+  font-size: 1.35em;
+  font-weight: 400;
+  color: #fffce1;
+  text-decoration: none;
+}
+
+.bm-item-subentry {
+  margin-top: 10%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+/* Charts */
+.recharts-wrapper {
+	font-family: 'Montserrat', sans-serif;
+  font: 14px "Montserrat", Futura, sans-serif;
+  fill: black;
+}
+
+.recharts-wrapper .recharts-layer .recharts-pie-labels{
+	font-family: 'Montserrat', sans-serif;
+  font: 18px "Montserrat", Futura, sans-serif;
+  fill: black;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

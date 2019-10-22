@@ -1,0 +1,307 @@
+{
+    "xslibraries": [
+        {
+            "name": "TENDL-2017",
+            "libname": "tal2017",
+            "dirname": "TENDL2017data",
+            "iseaf": false,
+            "particles": [
+                {
+                    "name": "neutron",
+                    "groups": [
+                        709
+                    ]
+                },
+                {
+                    "name": "proton",
+                    "groups": [
+                        162
+                    ]
+                },
+                {
+                    "name": "deuteron",
+                    "groups": [
+                        162
+                    ]
+                },
+                {
+                    "name": "alpha",
+                    "groups": [
+                        162
+                    ]
+                },
+                {
+                    "name": "gamma",
+                    "groups": [
+                        162
+                    ]
+                },
+                {
+                    "name": "triton",
+                    "groups": [
+                        162
+                    ]
+                }
+            ],
+            "groups": [
+                709
+            ]
+        },
+        {
+            "name": "TENDL-2015",
+            "libname": "tal2015",
+            "dirname": "TENDL2015data",
+            "iseaf": false,
+            "particles": [
+                {
+                    "name": "neutron",
+                    "groups": [
+                        709
+                    ]
+                },
+                {
+                    "name": "proton",
+                    "groups": [
+                        162
+                    ]
+                },
+                {
+                    "name": "deuteron",
+                    "groups": [
+                        162
+                    ]
+                },
+                {
+                    "name": "alpha",
+                    "groups": [
+                        162
+                    ]
+                },
+                {
+                    "name": "gamma",
+                    "groups": [
+                        162
+                    ]
+                },
+                {
+                    "name": "triton",
+                    "groups": [
+                        162
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "TENDL-2014",
+            "libname": "tal2014",
+            "dirname": "TENDL2014data",
+            "iseaf": false,
+            "particles": [
+                {
+                    "name": "neutron",
+                    "groups": [
+                        709
+                    ]
+                },
+                {
+                    "name": "proton",
+                    "groups": [
+                        162
+                    ]
+                },
+                {
+                    "name": "deuteron",
+                    "groups": [
+                        162
+                    ]
+                },
+                {
+                    "name": "alpha",
+                    "groups": [
+                        162
+                    ]
+                },
+                {
+                    "name": "gamma",
+                    "groups": [
+                        162
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "JEFF-3.2",
+            "libname": "jeff32",
+            "dirname": "JEFF32data",
+            "iseaf": false,
+            "particles": [
+                {
+                    "name": "neutron",
+                    "groups": [
+                        709
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "JEFF-3.3",
+            "libname": "jeff33",
+            "dirname": "JEFF33data",
+            "iseaf": false,
+            "particles": [
+                {
+                    "name": "neutron",
+                    "groups": [
+                        709
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "HEAD-2009",
+            "libname": "head2009",
+            "dirname": "HEAD2009data",
+            "iseaf": false,
+            "particles": [
+                {
+                    "name": "neutron",
+                    "groups": [
+                        709,
+                        1102
+                    ]
+                },
+                {
+                    "name": "proton",
+                    "groups": [
+                        162
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "CENDL-3.1",
+            "libname": "cendl31",
+            "dirname": "CENDL31data",
+            "iseaf": false,
+            "particles": [
+                {
+                    "name": "neutron",
+                    "groups": [
+                        709
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "JENDL-4",
+            "libname": "jendl4",
+            "dirname": "JENDL4data",
+            "iseaf": false,
+            "particles": [
+                {
+                    "name": "neutron",
+                    "groups": [
+                        709
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ENDF/B-VII.1",
+            "libname": "endfb71",
+            "dirname": "ENDFB71data",
+            "iseaf": false,
+            "particles": [
+                {
+                    "name": "neutron",
+                    "groups": [
+                        586,
+                        709
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "EAF-2010",
+            "libname": "eaf2010",
+            "dirname": "EAF2010data",
+            "iseaf": true,
+            "particles": [
+                {
+                    "name": "neutron",
+                    "groups": [
+                        66,
+                        69,
+                        100,
+                        172,
+                        175,
+                        211,
+                        315,
+                        351,
+                        616
+                    ]
+                }
+            ]
+        }
+    ],
+    "decaylibraries": [
+        {
+            "name": "decay-2012",
+            "libname": "decay_2012",
+            "dirname": "decay",
+            "iseaf": false
+        },
+        {
+            "name": "JEFF-3.3",
+            "libname": "decay",
+            "dirname": "JEFF33data",
+            "iseaf": false
+        },
+        {
+            "name": "ENDF/B-VII.1",
+            "libname": "endfb71",
+            "dirname": "ENDFB71data",
+            "iseaf": false
+        },
+        {
+            "name": "EAF-2010",
+            "libname": "eaf2010",
+            "dirname": "EAF2010data",
+            "iseaf": true
+        }
+    ],
+    "fylibraries": [
+        {
+            "name": "GEFY-5.2",
+            "libname": "gefy52_nfy",
+            "dirname": "GEFY52data",
+            "iseaf": false
+        },
+        {
+            "name": "GEFY-6.1",
+            "libname": "gefy61_nfy",
+            "dirname": "GEFY61data",
+            "iseaf": false
+        },
+        {
+            "name": "UKFY-4.2",
+            "libname": "ukfy4_2n",
+            "dirname": "UKFY42data",
+            "iseaf": false
+        }
+    ],
+    "sflibraries": [
+        {
+            "name": "GEFY-5.2",
+            "libname": "gefy52_sfy",
+            "dirname": "GEFY52data",
+            "iseaf": false
+        },
+        {
+            "name": "GEFY-6.1",
+            "libname": "gefy61_sfy",
+            "dirname": "GEFY61data",
+            "iseaf": false
+        }
+    ]
+}
